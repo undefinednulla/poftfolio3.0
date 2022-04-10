@@ -1,0 +1,26 @@
+.featured {
+    .box__item {
+            border-top: 1px solid $primary-color;
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            padding: 33px 0;
+            border-bottom: 1px solid $primary-color;
+            .heading {
+                font-family: $secondary-font;
+                font-style: normal;
+                // font-weight: 400;
+                font-size: 96px;
+                line-height: 1;
+                letter-spacing: 0.075em;
+                text-transform: uppercase;
+            }
+            .disc {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                margin-left: 40px;
+            }
+        }
+    }
+}

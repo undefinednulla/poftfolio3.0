@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;margin-top: 0;
+    &__left{
+        max-width: 255px;
+        display: flex;
+        flex-direction: column;
+        .brand {
+            margin-bottom: 105px;
+            display: flex;
+            align-items: center;
+            .logo {
+                margin-right: 20px;
+                max-width: 43px;
+            }
+            .design {
+                font-family: $third-font;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.105em;
+            }
+        }
+        .scroll {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 47px;
+            cursor: pointer;
+            .icon {
+                display: block;
+                width: 15px;
+                border-radius: 100rem;
+                outline-offset:1px;
+                outline: 1px solid $primary-color;
+                position: relative;
+                height: 30px;
+                background-color: $primary-color;
+                &::after {
+                    width: 3px; height: 5px;
+                    border-radius: 100rem;
+                    position: absolute;
+                    right: 50%;
+                    transform: translateX(50%);
+                    background-color: $secondary-color;
+                    content: '';
+                    top: 5px;
+                }
+            }
+            .text {
+                margin-left: 13px;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1;  
+                text-align: justify;
+                letter-spacing: 0.02em;
+                margin-bottom: -2px;
+            }
+        }
+    }
+    &__right{
+        max-width: 680px;
+        .textbox {
+            margin-bottom: 40px;
+            .heading {
+                font-style: italic;
+                font-weight: 800;
+                font-size: 36px;
+                text-align: justify;
+                letter-spacing: 0.03em;
+                margin-bottom: 15px;
+            }
+            .big-text {
+                margin-bottom: 35px;
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 128px;
+                line-height: 128px;        
+                letter-spacing: 0.075em;
+            }
+            .content {
+                text-align: justify;
+                letter-spacing: 0.02em;
+            
+            }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+        }
+    }
+}
